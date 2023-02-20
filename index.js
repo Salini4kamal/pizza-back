@@ -45,18 +45,18 @@ app.post("/signin", async function(req,res){
         if(!compare){
             res.status(401).send({msg:"invalid"})
         }else{
-            const token = await jwt.sign({id:result._id},"santhosh");
+            const token = await jwt.sign({id:result._id},"salini");
             async function nodemail(){
                 var transfer = nodemailer.createTransport({
                     service:"hotmail",
                     auth:{
-                       user:"santhoshbalaji304@gmail.com",
-                       pass:"santhosh1234"
+                       user:"salini4kamal@gmail.com",
+                       pass:"salini1234"
                     }
                  
                  })
                    const options={
-                    from:"santhoshbalaji304@gmail.com",
+                    from:"salini4kamal@gmail.com",
                     to:email,
                     subject:"your login",
                     text:"your login into pizz shop"
