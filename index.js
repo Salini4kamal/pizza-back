@@ -51,7 +51,7 @@ app.post("/signin", async function(req,res){
                     service:"hotmail",
                     auth:{
                        user:"salini4kamal@gmail.com",
-                       pass:"salini1234"
+                       pass:"salini4kamal"
                     }
                  
                  })
